@@ -16,7 +16,10 @@ services:
 
   jenkins:
     container_name: jenkins
-    image: jenkins/jenkins:lts
+    #image: jenkins/jenkins:lts
+    build:
+      context: .
+      dockerfile: Dockerfile
     restart: unless-stopped
     privileged: true
     user: root

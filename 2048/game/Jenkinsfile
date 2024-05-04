@@ -60,7 +60,7 @@ pipeline {
                 stage('Semgrep-Scan') {
                     agent {
                         docker {
-                            image 'returntocorp/semgrep'
+                            image 'returntocorp/semgrep:pr-10206'
                             args '-u root:root -v ${WORKSPACE}:/src'
                         }
                     }                     

@@ -20,6 +20,6 @@ terrascan scan -d .
 snyk -h
 snyk auth
 snyk iac test --help
-SNYK_TOKEN=1a0bee11-920a-477a-9c9f-3dcf40b26a41
+#SNYK_TOKEN=
 snyk config set api=$SNYK_TOKEN
 snyk iac test . --sarif
